@@ -1,1 +1,1 @@
-[I'm an inline-style link](https://pandomedia.now.sh)
+Сайт - [https://pandomedia.now.sh](https://pandomedia.now.sh)
