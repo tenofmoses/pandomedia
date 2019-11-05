@@ -32,7 +32,7 @@ const App = () => {
                 <section className="content">
                     <section className="groups">
                         <h1>Прайс:</h1>
-                        <p className="groups__text">Хотите разместить рекламу в двух и более сообществах? Нажмите на карточку - мы посчитаем сколько будет стоить размещение с учетом скидки!</p>
+                        <p className="groups__text">Хотите разместить рекламу в двух и более сообществах? Выберите сообщества - мы посчитаем сколько будет стоить размещение с учетом скидки!</p>
                         <div className="groups__wrapper">
                             {groups.map(element => <Card key={element.link} element={element} selectCard={selectCard} />)}
                         </div>

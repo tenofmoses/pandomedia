@@ -14,17 +14,24 @@ const Card = props => {
     }, [selected])
 
     return (
-        <div className={`card ${selected ? 'card__selected' : ''}`} onClick={selectCardHandler}>
+        <div className="card">
             <div className="card__image" style={{ backgroundImage: `url('${element.image}')` }} />
             <div className="card__price">{element.price} руб.</div>
             <div className="card__content">
                 <a href={element.link} target="_blank" rel="noopener noreferrer" className="card__header">{element.name}</a>
-                <div className="card__info">
-                    <a href={element.stats} className="card__link" rel="noopener noreferrer" target="_blank">Статистика</a>
-                    <div>~ {element.count} тысяч</div>
+                <div className="card__stats">~ {element.people} тысяч подписчиков</div>
+                <div className="card__stats">~ {element.week_stats} тысяч просмотров в неделю</div>
+                <div className="card__stats">~ {element.day_stats} тысяч просмотров в день</div>
+                <div className="card__check">
+                    <input className="checkbox"
+                        type="checkbox"
+                        id={element.id}
+                        name={element.id}
+                        checked={selected}
+                        onChange={selectCardHandler} />
+                    <label htmlFor={element.id}>Выбрать для скидки</label>
                 </div>
             </div>
-            
         </div>
     );
 }

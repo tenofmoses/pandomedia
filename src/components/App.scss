@@ -124,10 +124,14 @@ main {
     &__old {
         font-family: 'Roboto', sans-serif;
         color: #666666;
-        margin: 0 12px;
+        margin: 0 8px;
     }
     &__old-active {
         text-decoration: line-through;
+    }
+    &__new {
+        color: #17cca2;
+        font-size: 20px;
     }
 }
 
